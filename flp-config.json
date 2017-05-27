@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "Apuracoes.Apuracoes",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#Apuracoes-Display",
+        "navigationComponentName": "Apuracoes",
+        "intentSemanticObject": "Apuracoes",
+        "intentAction": "Display",
+        "html5ApplicationName": "apuracoes",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "383e6eff-45d4-4c67-9889-db9bf7362b5e"
+        ],
+        "contentPackages": [
+            "3f72f7f6-92a9-4da6-bd67-6ea8e234b295"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "searchKeywords": "Title,Subtitle",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

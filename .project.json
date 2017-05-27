@@ -1,0 +1,75 @@
+{
+  "projectType": [
+    "sap.watt.saptoolsets.fiori.project.ui5template.smartProject",
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild",
+    "sap.watt.saptoolsets.fiori.project.uiadaptation"
+  ],
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "excludedFolders": [
+      "test"
+    ],
+    "buildRequired": false,
+    "lastBuildDateTime": "Wed, 24 May 2017 20:37:18 GMT"
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.smartTemplateCommon",
+      "templateVersion": "1.40.12",
+      "dateTimeStamp": "Fri, 19 May 2017 20:08:55 GMT"
+    },
+    {
+      "templateId": "ui5template.smartTemplate",
+      "templateVersion": "1.40.12",
+      "dateTimeStamp": "Fri, 19 May 2017 20:08:56 GMT"
+    },
+    {
+      "templateId": "uiadaptation.changespreviewjs",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Wed, 24 May 2017 20:38:28 GMT"
+    },
+    {
+      "templateId": "uiadaptation.uiadaptationpanehtml",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Mon, 22 May 2017 00:38:58 GMT"
+    },
+    {
+      "templateId": "ui5template.listreportextension",
+      "templateVersion": "1.0.0",
+      "dateTimeStamp": "Fri, 19 May 2017 22:08:43 GMT"
+    }
+  ],
+  "mockpreview": {
+    "mockUri": "/HANAAccenture/Accenture/Assets/oData/apuracao/apuracao.xsodata",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "hcpdeploy": {
+    "account": "bbc2bd985",
+    "name": "apuracoes",
+    "lastVersionWeTriedToDeploy": "1.0.0"
+  }
+}

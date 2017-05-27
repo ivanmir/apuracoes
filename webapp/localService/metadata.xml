@@ -1,0 +1,41 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+        <Schema
+            xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+            xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="Accenture.Assets.oData.apuracao.apuracao">
+            <EntityType Name="ApuracoesType" sap:semantics="aggregate">
+                <Key>
+                    <PropertyRef Name="GeneratedID"/>
+                </Key>
+                <Property Name="GeneratedID" Type="Edm.String" Nullable="false" MaxLength="2147483647" sap:filterable="false"/>
+                <Property Name="ID_APURACAO" Type="Edm.Int32" sap:label="ID_APURACAO" sap:aggregation-role="dimension"/>
+                <Property Name="ID_EMPRESA" Type="Edm.String" MaxLength="4" sap:label="ID_EMPRESA" sap:aggregation-role="dimension"/>
+                <Property Name="ID_ESTABELECIMENTO" Type="Edm.String" MaxLength="4" sap:label="ID_ESTABELECIMENTO" sap:aggregation-role="dimension"/>
+                <Property Name="DT_INI_PERIODO" Type="Edm.DateTime" sap:display-format="Date" sap:label="DT_INI_PERIODO" sap:aggregation-role="dimension"/>
+                <Property Name="DT_FIM_PERIODO" Type="Edm.DateTime" sap:display-format="Date" sap:label="DT_FIM_PERIODO" sap:aggregation-role="dimension"/>
+                <Property Name="ID_VERSAO_APURACAO" Type="Edm.Int32" sap:label="ID_VERSAO_APURACAO" sap:aggregation-role="dimension"/>
+                <Property Name="ID_IMPOSTO" Type="Edm.Int32" sap:label="ID_IMPOSTO" sap:aggregation-role="dimension"/>
+                <Property Name="ID_LIVRO_ENTRADA" Type="Edm.Int32" sap:label="ID_LIVRO_ENTRADA" sap:aggregation-role="dimension"/>
+                <Property Name="ID_LIVRO_SAIDA" Type="Edm.Int32" sap:label="ID_LIVRO_SAIDA" sap:aggregation-role="dimension"/>
+                <Property Name="DT_CRIACAO_REGISTRO" Type="Edm.DateTime" sap:display-format="Date" sap:label="DT_CRIACAO_REGISTRO" sap:aggregation-role="dimension"/>
+                <Property Name="USER_CRIACAO_REGISTRO" Type="Edm.String" MaxLength="12" sap:label="USER_CRIACAO_REGISTRO" sap:aggregation-role="dimension"/>
+                <Property Name="DT_ULT_MODIFICACAO" Type="Edm.DateTime" sap:display-format="Date" sap:label="DT_ULT_MODIFICACAO" sap:aggregation-role="dimension"/>
+                <Property Name="USER_ULT_MODIFICACAO" Type="Edm.String" MaxLength="12" sap:label="USER_ULT_MODIFICACAO" sap:aggregation-role="dimension"/>
+                <Property Name="IN_TRANS_SALDO_PX_MES" Type="Edm.String" MaxLength="1" sap:label="IN_TRANS_SALDO_PX_MES" sap:aggregation-role="dimension"/>
+                <Property Name="COD_CURR" Type="Edm.String" MaxLength="3" sap:semantics="currency-code" sap:label="COD_CURR" sap:aggregation-role="dimension"/>
+                <Property Name="F_VL_SALDO" Type="Edm.Decimal" Precision="34" Scale="2" sap:filterable="false" sap:label="F_VL_SALDO" sap:aggregation-role="measure" sap:unit="COD_CURR"/>
+                <Property Name="F_VL_TOTAL_CONTABIL" Type="Edm.Decimal" Precision="34" Scale="2" sap:filterable="false" sap:label="F_VL_TOTAL_CONTABIL" sap:aggregation-role="measure" sap:unit="COD_CURR"/>
+                <Property Name="F_VL_CREDITO_IMPOSTO" Type="Edm.Decimal" Precision="34" Scale="2" sap:filterable="false" sap:label="F_VL_CREDITO_IMPOSTO" sap:aggregation-role="measure" sap:unit="COD_CURR"/>
+                <Property Name="F_VL_IMPOSTO_DEVIDO" Type="Edm.Decimal" Precision="34" Scale="2" sap:filterable="false" sap:label="F_VL_IMPOSTO_DEVIDO" sap:aggregation-role="measure" sap:unit="COD_CURR"/>
+                <Property Name="F_VL_SALDO_ANTERIOR" Type="Edm.Decimal" Precision="34" Scale="2" sap:filterable="false" sap:label="F_VL_SALDO_ANTERIOR" sap:aggregation-role="measure" sap:unit="COD_CURR"/>
+            </EntityType>
+            <EntityContainer Name="apuracao" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="Apuracoes" EntityType="Accenture.Assets.oData.apuracao.apuracao.ApuracoesType"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,31 @@
+{
+	"fileName": "id_1495413639387_57_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"reference": "Apuracoes.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "useExportToExcel",
+		"oldValue": false,
+		"newValue": true
+	},
+	"selector": {
+		"id": "Apuracoes::sap.suite.ui.generic.template.ListReport.view.ListReport::Apuracoes--listReport",
+		"type": "sap.ui.comp.smarttable.SmartTable",
+		"idIsLocal": false
+	},
+	"layer": "VENDOR",
+	"texts": {},
+	"namespace": "apps/Apuracoes/changes/",
+	"creation": "2017-05-22T00:40:47.101Z",
+	"originalLanguage": "PT",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.44.12"
+	},
+	"dependentSelector": {}
+}

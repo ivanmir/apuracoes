@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:smartfilterbar="sap.ui.comp.smartfilterbar" xmlns:core="sap.ui.core">
+	<smartfilterbar:ControlConfiguration key="ID_IMPOSTO" index="1" label="{@i18n>CustomFilter1Label}" groupId="_BASIC">
+		<smartfilterbar:customControl>
+			<ComboBox id="ID_IMPOSTOCombo">
+				<core:Item key="0" text="Imposto 1"/>
+				<core:Item key="1" text="Imposto 2"/>
+			</ComboBox>
+		</smartfilterbar:customControl>
+	</smartfilterbar:ControlConfiguration>
+</core:FragmentDefinition>
